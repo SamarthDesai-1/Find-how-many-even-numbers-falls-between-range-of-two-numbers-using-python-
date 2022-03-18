@@ -1,0 +1,14 @@
+def even_range(arg1, arg2):
+    result = arg1 - arg2
+    i = 1
+    count1 = 0
+    while i <= result:
+        if i % 2 == 0:
+            count1 = count1 + 1
+        i += 1
+    print(f"There are {count1} even numbers between {arg1} to {arg2}.")
+
+
+big_number = int(input("Enter an big number : "))
+small_number = int(input("Enter an small number : "))
+even_range(big_number, small_number)
